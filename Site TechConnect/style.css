@@ -160,17 +160,36 @@ footer {
   background-color: black;
   height: 50px;
 }
+nav{
+  display: none;
+  width: 20em;
+  
+  justify-content: space-evenly;
+  
+  
+  
+}
+nav a{
+  background-color: transparent;
+  color: black;
+}
+nav a:hover{
+  text-decoration: underline;
+}
+/* Computadores */
+@media screen and (min-width: 667px) {
+  header img{
+    display: none;
 
-@media screen and (min-width: 481px) and (max-width: 768px) {
-  /* Regras de estilo específicas para tablets */
+  }
+  nav{
+    display: flex;
+  }
+  .biografia p {
+    font-size: 20px;
+    width: 60%;
+  }
+
 }
 
-/* Estilos para notebooks */
-@media screen and (min-width: 769px) and (max-width: 1024px) {
-  /* Regras de estilo específicas para notebooks */
-}
 
-/* Estilos para desktops */
-@media screen and (min-width: 1025px) {
-  /* Regras de estilo específicas para desktops */
-}
